@@ -1,0 +1,13 @@
+body {}
+#product-info {
+    margin-top: 100px;
+}
+#product-info .owl-carousel {
+    padding: 30px;
+}
+.add-to-cart {
+    margin-bottom: 10px;
+}
+#myTabContent {
+    margin-bottom: 25px;
+}
