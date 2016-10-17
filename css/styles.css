@@ -77,7 +77,7 @@ body {
     padding: 0
 }
 body#boxed {
-    background: url(//img/boxed.jpg) left center #fff
+    background: url(../img/boxed.jpg) left center #fff
 }
 body#boxed #wrapper {
     margin-right: auto;
@@ -2420,7 +2420,7 @@ ul.contact-details i {
     }
 }
 .backtotop {
-    background-image: url(img/back.png);
+    background-image: url(../img/back.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     z-index: 500;
@@ -2676,25 +2676,25 @@ acronym {
     z-index: 1000
 }
 .ribbon1::before {
-    content: url(img/ribbon_01.png)
+    content: url(../img/ribbon_01.png)
 }
 .ribbon2::before {
-    content: url(img/ribbon_02.png)
+    content: url(../img/ribbon_02.png)
 }
 .ribbon3::before {
-    content: url(img/ribbon_03.png)
+    content: url(../img/ribbon_03.png)
 }
 .ribbon4::before {
-    content: url(img/ribbon_04.png)
+    content: url(../img/ribbon_04.png)
 }
 .ribbon5::before {
-    content: url(img/ribbon_05.png)
+    content: url(../img/ribbon_05.png)
 }
 .ribbon6::before {
-    content: url(img/ribbon_06.png)
+    content: url(../img/ribbon_06.png)
 }
 .ribbon7::before {
-    content: url(img/ribbon_07.png)
+    content: url(../img/ribbon_07.png)
 }
 @media (min-width:992px) {
     .yamm-fw {
