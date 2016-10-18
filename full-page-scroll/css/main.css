@@ -1,0 +1,18 @@
+.overview {
+    background: #d4a9a9;
+}
+.products {
+    background: #76d676;
+}
+.blog {
+    background: blue;
+}
+.portfolio {
+    background: orange;
+}
+.contact {
+    background: purple;
+}
+h2 {
+    text-align: center;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Apparel</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <h1>Isotope - combination filters</h1>
+
+    <div class="filters">
+
+        <div class="ui-group">
+            <h3>Category</h3>
+            <div class="button-group js-radio-button-group" data-filter-group="color">
+                <button class="button is-checked" data-filter="">Any</button>
+                <button class="button" data-filter=".shirt">Shirts</button>
+                <button class="button" data-filter=".blue">Hats</button>
+                <button class="button" data-filter=".yellow">yellow</button>
+            </div>
+        </div>
+
+        <div class="ui-group">
+            <h3>Size</h3>
+            <div class="button-group js-radio-button-group" data-filter-group="size">
+                <button class="button is-checked" data-filter="">any</button>
+                <button class="button" data-filter=".small">small</button>
+                <button class="button" data-filter=".wide">wide</button>
+                <button class="button" data-filter=".big">big</button>
+                <button class="button" data-filter=".tall">tall</button>
+            </div>
+        </div>
+
+        <div class="ui-group">
+            <h3>Shape</h3>
+            <div class="button-group js-radio-button-group" data-filter-group="shape">
+                <button class="button is-checked" data-filter="">any</button>
+                <button class="button" data-filter=".round">round</button>
+                <button class="button" data-filter=".square">square</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="grid">
+        <div class="color-shape small round shirt"></div>
+        <div class="color-shape small round blue"></div>
+        <div class="color-shape small round yellow"></div>
+        <div class="color-shape small square red"></div>
+        <div class="color-shape small square blue"></div>
+        <div class="color-shape small square yellow"></div>
+        <div class="color-shape wide round red"></div>
+        <div class="color-shape wide round blue"></div>
+        <div class="color-shape wide round yellow"></div>
+        <div class="color-shape wide square red"></div>
+        <div class="color-shape wide square blue"></div>
+        <div class="color-shape wide square yellow"></div>
+        <div class="color-shape big round red"></div>
+        <div class="color-shape big round blue"></div>
+        <div class="color-shape big round yellow"></div>
+        <div class="color-shape big square red"></div>
+        <div class="color-shape big square blue"></div>
+        <div class="color-shape big square yellow"></div>
+        <div class="color-shape tall round red"></div>
+        <div class="color-shape tall round blue"></div>
+        <div class="color-shape tall round yellow"></div>
+        <div class="color-shape tall square red"></div>
+        <div class="color-shape tall square blue"></div>
+        <div class="color-shape tall square yellow"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/isotope.min.js"></script>
+    <script type="text/javascript">
+        // external js: isotope.pkgd.js
+
+        // init Isotope
+        var $grid = $('.grid').isotope({
+            itemSelector: '.color-shape'
+        });
+
+        // store filter for each group
+        var filters = {};
+
+        $('.filters').on('click', '.button', function() {
+            var $this = $(this);
+            // get group key
+            var $buttonGroup = $this.parents('.button-group');
+            var filterGroup = $buttonGroup.attr('data-filter-group');
+            // set filter for group
+            filters[filterGroup] = $this.attr('data-filter');
+            // combine filters
+            var filterValue = concatValues(filters);
+            // set filter for Isotope
+            $grid.isotope({
+                filter: filterValue
+            });
+        });
+
+        // change is-checked class on buttons
+        $('.button-group').each(function(i, buttonGroup) {
+            var $buttonGroup = $(buttonGroup);
+            $buttonGroup.on('click', 'button', function() {
+                $buttonGroup.find('.is-checked').removeClass('is-checked');
+                $(this).addClass('is-checked');
+            });
+        });
+
+        // flatten object by concatting values
+        function concatValues(obj) {
+            var value = '';
+            for (var prop in obj) {
+                value += obj[prop];
+            }
+            return value;
+        }
+
+    </script>
+</body>
+
+</html>

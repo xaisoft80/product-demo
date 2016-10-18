@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>One Page Scroll</title>
+    <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section overview">
+            <h2>OVERVIEW</h2>
+        </div>
+        <div class="section products">
+            <h2>PRODUCTS</h2></div>
+        <div class="section blog">
+            <h2>BLOG</h2></div>
+        <div class="section portfolio">
+            <div class="slide">
+                <h2>Slide 1 </h2></div>
+            <div class="slide">
+                <h2>Slide 2 </h2></div>
+            <div class="slide">
+                <h2>Slide 3 </h2></div>
+            <div class="slide">
+                <h2>Slide 4 </h2></div>
+        </div>
+        <div class="section contact">
+            <h2>CONTACT US</h2></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage();
+        });
+
+    </script>
+</body>
+
+</html>
