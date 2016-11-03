@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from themes.iamabdus.com/bigbag/1.0/product-grid-right-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2016 00:54:31 GMT -->
+
 
 <head>
 
@@ -9,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product Grid Sidebar Right - BIGBAG Store</title>
+    <title>Product List Sidebar Right - BIGBAG Store</title>
     
     <!-- PLUGINS CSS STYLE -->
     <link href="plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
@@ -25,7 +24,7 @@
     
     <!-- CUSTOM CSS -->
     <link href="css/style.css" rel="stylesheet">
-  
+   
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,7 +37,7 @@
 
   <body>
 
-  
+
 
     <div class="main-wrapper">
 
@@ -109,7 +108,7 @@
             </div>
           </div>    
         </div>
-
+        
         <!-- NAVBAR -->
         <nav class="navbar navbar-main navbar-default" role="navigation">
           <div class="container">
@@ -135,7 +134,7 @@
                       <ul class="list-unstyled">
                         <li>Products Grid View</li>
                         <li><a href="product-grid-left-sidebar.html">Products Sidebar Left</a></li>
-                        <li class="active"><a href="product-grid-right-sidebar.html">Products Sidebar Right</a></li>
+                        <li><a href="product-grid-right-sidebar.html">Products Sidebar Right</a></li>
                         <li><a href="product-grid-3-col-filter.html">Products 3 Columns V1</a></li>
                         <li><a href="product-grid-3-col.html">Products 3 Columns V2</a></li>
                         <li><a href="product-grid-4-col.html">Products 4 Columns</a></li>
@@ -145,7 +144,7 @@
                       <ul class="list-unstyled">
                         <li>Products List View</li>
                         <li><a href="product-list-left-sidebar.html">Products Sidebar Left</a></li>
-                        <li><a href="product-list-right-sidebar.html">Products Sidebar Right</a></li>
+                        <li class="active"><a href="product-list-right-sidebar.html">Products Sidebar Right</a></li>
                         <li class="listHeading">Others</li>
                         <li><a href="single-product.html">Single Product</a></li>
                         <li><a href="cart-page.html">Cart Page</a></li>
@@ -215,7 +214,7 @@
           <div class="row">
             <div class="col-xs-6">
               <div class="page-title">
-                <h2>Product Grid View</h2>
+                <h2>Product List View</h2>
               </div>
             </div>
             <div class="col-xs-6">
@@ -226,7 +225,7 @@
                 <li>
                   <a href="#">shop</a>
                 </li>
-                <li class="active">Product Grid Right Sidebar</li>
+                <li class="active">Product List Right Sidebar</li>
               </ol>
             </div>
           </div>
@@ -339,254 +338,150 @@
                     <option value="1">Sort by popularity</option>
                     <option value="2">Sort by rating</option>
                     <option value="3">Sort by newness</option>
-                    <option value="3">Sort by price</option>            
+                    <option value="3">Sort by price</option>           
                   </select>
                 </div>
                 <div class="col-xs-6">
                   <div class="btn-group pull-right" role="group">
-                    <button type="button" class="btn btn-default active" onclick="window.location.href='product-grid-right-sidebar.html'"><i class="fa fa-th" aria-hidden="true"></i><span>Grid</span></button>
-                    <button type="button" class="btn btn-default" onclick="window.location.href='product-list-right-sidebar.html'"><i class="fa fa-th-list" aria-hidden="true"></i><span>List</span></button>
+                    <button type="button" class="btn btn-default" onclick="window.location.href='product-grid-right-sidebar.html'"><i class="fa fa-th" aria-hidden="true"></i><span>Grid</span></button>
+                    <button type="button" class="btn btn-default active" onclick="window.location.href='product-list-right-sidebar.html'"><i class="fa fa-th-list" aria-hidden="true"></i><span>List</span></button>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-01.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
-                      </div>
+              <div class="row productListSingle">
+                <div class="col-xs-12">
+                  <div class="media">
+                    <div class="media-left">
+                      <img class="media-object" src="img/products/products-01.jpg" alt="Image">
+                      <span class="maskingImage"><a data-toggle="modal" href="-2.html" class="btn viewBtn">Quick View</a></span>
                     </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Nike Sportswear</h5>
-                      </a>
-                      <h3>$199</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-02.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Dip Dyed Sweater</h5>
-                      </a>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-03.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
-                      </div>
+                <div class="col-xs-12">
+                  <div class="media">
+                    <div class="media-left">
+                      <img class="media-object" src="img/products/products-02.jpg" alt="Image">
+                      <span class="maskingImage"><a data-toggle="modal" href="-2.html" class="btn viewBtn">Quick View</a></span>
                     </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Scarf Ring Corner</h5>
-                      </a>
-                      <h3>$179</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-04.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Sun Buddies</h5>
-                      </a>
-                      <h3>$149</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-05.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Nike Sportswear</h5>
-                      </a>
-                      <h3>$199</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-06.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Dip Dyed Sweater</h5>
-                      </a>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-07.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
-                      </div>
+                <div class="col-xs-12">
+                  <div class="media">
+                    <div class="media-left">
+                      <img class="media-object" src="img/products/products-03.jpg" alt="Image">
+                      <span class="maskingImage"><a data-toggle="modal" href="-2.html" class="btn viewBtn">Quick View</a></span>
                     </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Scarf Ring Corner</h5>
-                      </a>
-                      <h3>$179</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-08.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Sun Buddies</h5>
-                      </a>
-                      <h3>$149</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-09.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Nike Sportswear</h5>
-                      </a>
-                      <h3>$199</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-10.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Dip Dyed Sweater</h5>
-                      </a>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-11.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
-                      </div>
+                <div class="col-xs-12">
+                  <div class="media">
+                    <div class="media-left">
+                      <img class="media-object" src="img/products/products-04.jpg" alt="Image">
+                      <span class="maskingImage"><a data-toggle="modal" href="-2.html" class="btn viewBtn">Quick View</a></span>
                     </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Scarf Ring Corner</h5>
-                      </a>
-                      <h3>$179</h3>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <h3>$249</h3>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="productBox">
-                    <div class="productImage clearfix">
-                      <img src="img/products/products-12.jpg" alt="products-img">
-                      <div class="productMasking">
-                        <ul class="list-inline btn-group" role="group">
-                          <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a class="btn btn-default" data-toggle="modal" href="-2.html" ><i class="fa fa-eye"></i></a></li>
-                        </ul>
+                <div class="col-xs-12">
+                  <div class="media">
+                    <div class="media-left">
+                      <img class="media-object" src="img/products/products-05.jpg" alt="Image">
+                      <span class="maskingImage"><a data-toggle="modal" href="-2.html" class="btn viewBtn">Quick View</a></span>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <h3>$249</h3>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                       </div>
                     </div>
-                    <div class="productCaption clearfix">
-                      <a href="single-product.html">
-                        <h5>Sun Buddies</h5>
-                      </a>
-                      <h3>$149</h3>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="media">
+                    <div class="media-left">
+                      <img class="media-object" src="img/products/products-06.jpg" alt="Image">
+                      <span class="maskingImage"><a data-toggle="modal" href="-2.html" class="btn viewBtn">Quick View</a></span>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <h3>$249</h3>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="media">
+                    <div class="media-left">
+                      <img class="media-object" src="img/products/products-07.jpg" alt="Image">
+                      <span class="maskingImage"><a data-toggle="modal" href="-2.html" class="btn viewBtn">Quick View</a></span>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <h3>$249</h3>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="media">
+                    <div class="media-left">
+                      <img class="media-object" src="img/products/products-08.jpg" alt="Image">
+                      <span class="maskingImage"><a data-toggle="modal" href="-2.html" class="btn viewBtn">Quick View</a></span>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <h3>$249</h3>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -793,7 +688,7 @@
         </div>
       </div>
     </div>
-   
+
     <!-- PORDUCT QUICK VIEW MODAL -->
     <div class="modal fade quick-view" tabindex="-1" role="dialog">
       <div class="modal-dialog">
@@ -833,7 +728,7 @@
         </div>
       </div>
     </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="plugins/jquery-ui/jquery-ui.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -842,10 +737,10 @@
     <script src="plugins/owl-carousel/owl.carousel.js"></script>
     <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
     <script src="plugins/countdown/jquery.syotimer.js"></script>
-
+   
     <script src="js/custom.js"></script>
 
   </body>
 
-<!-- Mirrored from themes.iamabdus.com/bigbag/1.0/product-grid-right-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2016 00:54:31 GMT -->
+<!-- Mirrored from themes.iamabdus.com/bigbag/1.0/product-list-right-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2016 00:54:31 GMT -->
 </html>
