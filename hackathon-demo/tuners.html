@@ -2,13 +2,14 @@
 <html lang="en">
 
 
+
 <head>
 
     <!-- SITE TITTLE -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BIGBAG Store - Ecommerce Bootstrap Template</title>
+    <title>Product Grid Sidebar Right - BIGBAG Store</title>
 
     <!-- PLUGINS CSS STYLE -->
     <link href="plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
@@ -38,7 +39,6 @@
 <body>
 
 
-
     <div class="main-wrapper">
 
         <!-- HEADER -->
@@ -59,9 +59,9 @@
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <ul class="list-inline pull-right">
-                                <li><span><a data-toggle="modal" href='.html'>Log in</a><small>or</small><a data-toggle="modal" href='#signup'>Create an account</a></span></li>
+                                <li><span><a data-toggle="modal" href='#login'>Log in</a><small>or</small><a data-toggle="modal" href='#signup'>Create an account</a></span></li>
                                 <li class="dropdown searchBox">
-                                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
                                     <ul class="dropdown-menu dropdown-menu-right">
                                         <li>
                                             <span class="input-group">
@@ -72,11 +72,11 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="cart-page.html" class="dropdown-toggle" data-toggle="dropdown disabled"><i class="fa fa-shopping-cart"></i>$0</a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i>$0</a>
                                     <ul class="dropdown-menu dropdown-menu-right">
                                         <li>Item(s) in your cart</li>
                                         <li>
-                                            <a href="single-product.html">
+                                            <a href="#">
                                                 <div class="media">
                                                     <img class="media-left media-object" src="img/home/cart-items/cart-item-01.jpg" alt="cart-Image">
                                                     <div class="media-body">
@@ -86,7 +86,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="single-product.html">
+                                            <a href="#">
                                                 <div class="media">
                                                     <img class="media-left media-object" src="img/home/cart-items/cart-item-01.jpg" alt="cart-Image">
                                                     <div class="media-body">
@@ -97,8 +97,8 @@
                                         </li>
                                         <li>
                                             <div class="btn-group" role="group" aria-label="...">
-                                                <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';">Shopping Cart</button>
-                                                <button type="button" class="btn btn-default" onclick="location.href='checkout-step-1.html';">Checkout</button>
+                                                <button type="button" class="btn btn-default">Shopping Cart</button>
+                                                <button type="button" class="btn btn-default">Checkout</button>
                                             </div>
                                         </li>
                                     </ul>
@@ -198,243 +198,206 @@
                     <!-- /.navbar-collapse -->
                 </div>
             </nav>
-
         </div>
 
-        <!-- BANNER -->
-        <div class="bannercontainer">
-            <div class="fullscreenbanner-container">
-                <div class="fullscreenbanner">
-                    <ul>
-                        <li data-transition="slidehorizontal" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
-                            <img src="img/home/banner-slider/slider-bg.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-                            <div class="slider-caption container">
-                                <div class="tp-caption rs-caption-1 sft start" data-hoffset="0" data-x="370" data-y="54" data-speed="800" data-start="1000" data-easing="Back.easeInOut" data-endspeed="300">
-                                    <img src="img/home/banner-slider/shoe1.png" alt="slider-image">
-                                </div>
-
-                                <div class="tp-caption rs-caption-2 sft" data-hoffset="0" data-y="119" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
-                                    X4 Peformance Tuner
-                                </div>
-
-
-                                <div class="tp-caption rs-caption-4 sft" data-hoffset="0" data-y="200" data-speed="800" data-start="2000" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off">
-                                    <span class="page-scroll"><a target="_blank" href="http://goo.gl/VCbeOp" class="btn primary-btn">Buy Now<i class="glyphicon glyphicon-chevron-right"></i></a></span>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-transition="slidehorizontal" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
-                            <img src="img/home/banner-slider/slider-bg.jpg" alt="slidebg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-                            <div class="slider-caption container captionCenter">
-                                <div class="tp-caption rs-caption-1 sft start captionCenterAlign" data-x="center" data-y="180" data-speed="800" data-start="1000" data-easing="Back.easeInOut" data-endspeed="300">
-                                    <img src="img/home/banner-slider/shoe2.png" alt="slider-image">
-                                </div>
-
-
-
-                                <div class="tp-caption rs-caption-3 sft captionCenterAlign" data-x="center" data-y="98" data-speed="1000" data-start="1500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off">
-                                    ITSX Peformance Tuner
-                                </div>
-
-                                <div class="tp-caption rs-caption-4 sft captionCenterAlign" data-x="center" data-y="156" data-speed="800" data-start="2000" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off">
-                                    <span class="page-scroll"><a target="_blank" href="http://goo.gl/VCbeOp" class="btn primary-btn">Buy Now<i class="glyphicon glyphicon-chevron-right"></i></a></span>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-transition="slidehorizontal" data-slotamount="5" data-masterspeed="700" data-title="Slide 3">
-                            <img src="img/home/banner-slider/slider-bg.jpg" alt="slidebg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-                            <div class="slider-caption container">
-                                <div class="tp-caption rs-caption-1 sft start" data-hoffset="0" data-x="0" data-y="0" data-speed="800" data-start="1000" data-easing="Back.easeInOut" data-endspeed="300">
-                                    <img src="img/home/banner-slider/shoe3.png" alt="slider-image">
-                                </div>
-
-                                <div class="tp-caption rs-caption-2 sft " data-hoffset="0" data-y="119" data-x="650" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
-                                    LivewireTS Peformance Tuner
-                                </div>
-
-
-
-                                <div class="tp-caption rs-caption-4 sft" data-hoffset="0" data-y="200" data-x="650" data-speed="800" data-start="2000" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off">
-                                    <span class="page-scroll"><a target="_blank" href="http://goo.gl/VCbeOp" class="btn primary-btn">Buy Now<i class="glyphicon glyphicon-chevron-right"></i></a></span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+        <!-- LIGHT SECTION -->
+        <section class="lightSection clearfix pageHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="page-title">
+                            <h2>Peformance Tuners</h2>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <ol class="breadcrumb pull-right">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li class="active">Tuners</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- MAIN CONTENT SECTION -->
-        <section class="mainContent clearfix">
+        <section class="mainContent clearfix productsContent">
             <div class="container">
-                <div class="row featuredCollection">
-                    <div class="col-xs-12">
-                        <div class="page-header">
-                            <h4>Featured Collection</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="thumbnail" onclick="location.href='single-product.html';">
-                            <div class="imageWrapper">
-                                <img src="img/home/featured-collection/featured-collection-01.jpg" alt="feature-collection-image">
-                                <div class="masking"><a href="tuners.html" class="btn viewBtn">View Products</a></div>
-                            </div>
-                            <div class="caption">
-                                <h4>Tuners</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="thumbnail" onclick="location.href='single-product.html';">
-                            <div class="imageWrapper">
-                                <img src="img/home/featured-collection/featured-collection-02.jpg" alt="feature-collection-image">
-                                <div class="masking"><a href="product-grid-right-sidebar.html" class="btn viewBtn">View Products</a></div>
-                            </div>
-                            <div class="caption">
-                                <h4>Software</h4>
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-md-push-9 col-sm-push-8 col-xs-12 sideBar">
+
+                        <div class="panel panel-default priceRange">
+                            <div class="panel-heading">Filter by Price</div>
+                            <div class="panel-body clearfix">
+                                <div class="price-slider-inner">
+                                    <span class="amount-wrapper">
+                      Price:
+                      <input type="text" id="price-amount-1" readonly>
+                      <strong>-</strong>
+                      <input type="text" id="price-amount-2" readonly> 
+                    </span>
+                                    <div id="price-range"></div>
+                                </div>
+                                <input class="btn btn-default" type="submit" value="Filter">
+                                <!-- <span class="priceLabel">Price: <strong>$12 - $30</strong></span> -->
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="thumbnail" onclick="location.href='single-product.html';">
-                            <div class="imageWrapper">
-                                <img src="img/home/featured-collection/featured-collection-03.jpg" alt="feature-collection-image">
-                                <div class="masking"><a href="product-grid-right-sidebar.html" class="btn viewBtn">View Products</a></div>
+                        <div class="panel panel-default filterNormal">
+                            <div class="panel-heading">filter by Year</div>
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">2017<span>(5)</span></a></li>
+                                    <li><a href="#">2016<span>(7)</span></a></li>
+                                    <li><a href="#">2014<span>(10)</span></a></li>
+                                    <li><a href="#">2013<span>(15)</span></a></li>
+                                </ul>
                             </div>
-                            <div class="caption">
-                                <h4>Accessories</h4>
+                        </div>
+                        <div class="panel panel-default filterNormal">
+                            <div class="panel-heading">filter by Make</div>
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Chevrolet<span>(1)</span></a></li>
+                                    <li><a href="#">Dodge<span>(1)</span></a></li>
+                                    <li><a href="#">Ford<span>(1)</span></a></li>
+                                    <li><a href="#">Jeep<span>(0)</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default filterNormal">
+                            <div class="panel-heading">filter by Model</div>
+                            <div class="panel-body">
+                                <ul class="list-unstyled clearfix">
+                                    <li><a href="#">Camaro<span>(1)</span></a></li>
+                                    <li><a href="#">Charger<span>(1)</span></a></li>
+                                    <li><a href="#">Mustang<span>(1)</span></a></li>
+                                    <li><a href="#">Cherokee<span>(0)</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default filterNormal">
+                            <div class="panel-heading">filter by Engine</div>
+                            <div class="panel-body">
+                                <ul class="list-unstyled clearfix">
+                                    <li><a href="#">6.2L<span>(1)</span></a></li>
+                                    <li><a href="#">5.7L<span>(1)</span></a></li>
+                                    <li><a href="#">5.0L<span>(1)</span></a></li>
+                                    <li><a href="#">5.7L<span>(0)</span></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row featuredProducts">
-                    <div class="col-xs-12">
-                        <div class="page-header">
-                            <h4>Featured Products</h4>
+                    <div class="col-md-9 col-sm-8 col-md-pull-3 col-sm-pull-4 col-xs-12">
+                        <div class="row filterArea">
+                            <div class="col-xs-6">
+                                <select name="guiest_id1" id="guiest_id1" class="select-drop">
+                                    <option value="0">Default sorting</option>
+                                    <option value="1">Sort by popularity</option>
+                                    <option value="2">Sort by rating</option>
+                                    <option value="3">Sort by newness</option>
+                                    <option value="3">Sort by price</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="btn-group pull-right" role="group">
+                                    <button type="button" class="btn btn-default active" onclick="window.location.href='product-grid-right-sidebar.html'"><i class="fa fa-th" aria-hidden="true"></i><span>Grid</span></button>
+                                    <button type="button" class="btn btn-default" onclick="window.location.href='product-list-right-sidebar.html'"><i class="fa fa-th-list" aria-hidden="true"></i><span>List</span></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="owl-carousel featuredProductsSlider">
-                            <div class="slide">
-                                <div class="productImage clearfix">
-                                    <img src="img/home/featured-product/product-01.jpg" alt="featured-product-img">
-                                    <div class="productMasking">
-                                        <ul class="list-inline btn-group" role="group">
-                                            <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                            <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                            <li><a data-toggle="modal" href="-2.html" class="btn btn-default"><i class="fa fa-eye"></i></a></li>
-                                        </ul>
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="productBox">
+                                    <div class="productImage clearfix">
+                                        <img src="img/products/products-01.jpg" alt="products-img">
+                                        <div class="productMasking">
+                                            <ul class="list-inline btn-group" role="group">
+                                                <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a class="btn btn-default" data-toggle="modal" href="-2.html"><i class="fa fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="productCaption clearfix">
+                                        <a href="single-product.html">
+                                            <h5>X4 Peformance Tuner</h5>
+                                        </a>
+                                        <h3>$399</h3>
                                     </div>
                                 </div>
-                                <div class="productCaption clearfix">
-                                    <a href="single-product.html">
-                                        <h5>X4 Peformance Tuner</h5>
-                                    </a>
-                                    <h3>$399</h3>
-                                </div>
                             </div>
-                            <div class="slide">
-                                <div class="productImage">
-                                    <img src="img/home/featured-product/product-02.jpg" alt="featured-product-img">
-                                    <div class="productMasking">
-                                        <ul class="list-inline btn-group" role="group">
-                                            <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                            <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                            <li><a data-toggle="modal" href="-2.html" class="btn btn-default"><i class="fa fa-eye"></i></a></li>
-                                        </ul>
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="productBox">
+                                    <div class="productImage clearfix">
+                                        <img src="img/products/products-02.jpg" alt="products-img">
+                                        <div class="productMasking">
+                                            <ul class="list-inline btn-group" role="group">
+                                                <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a class="btn btn-default" data-toggle="modal" href="-2.html"><i class="fa fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="productCaption clearfix">
+                                        <a href="single-product.html">
+                                            <h5>LivewireTS Peformance Tuner</h5>
+                                        </a>
+                                        <h3>$599</h3>
                                     </div>
                                 </div>
-                                <div class="productCaption">
-                                    <a href="single-product.html">
-                                        <h5>LiveWire TS Plus</h5>
-                                    </a>
-                                    <h3>$599</h3>
-                                </div>
                             </div>
-                            <div class="slide">
-                                <div class="productImage">
-                                    <img src="img/home/featured-product/product-03.jpg" alt="featured-product-img">
-                                    <div class="productMasking">
-                                        <ul class="list-inline btn-group" role="group">
-                                            <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                            <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                            <li><a data-toggle="modal" href="-2.html" class="btn btn-default"><i class="fa fa-eye"></i></a></li>
-                                        </ul>
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="productBox">
+                                    <div class="productImage clearfix">
+                                        <img src="img/products/products-03.jpg" alt="products-img">
+                                        <div class="productMasking">
+                                            <ul class="list-inline btn-group" role="group">
+                                                <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a class="btn btn-default" data-toggle="modal" href="-2.html"><i class="fa fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="productCaption clearfix">
+                                        <a href="single-product.html">
+                                            <h5>Eliminator Switch Chip</h5>
+                                        </a>
+                                        <h3>$349</h3>
                                     </div>
                                 </div>
-                                <div class="productCaption">
-                                    <a href="single-product.html">
-                                        <h5>Eliminator Switch Chip</h5>
-                                    </a>
-                                    <h3>$349</h3>
-                                </div>
                             </div>
-                            <div class="slide">
-                                <div class="productImage">
-                                    <img src="img/home/featured-product/product-04.jpg" alt="featured-product-img">
-                                    <div class="productMasking">
-                                        <ul class="list-inline btn-group" role="group">
-                                            <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                            <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                            <li><a data-toggle="modal" href="-2.html" class="btn btn-default"><i class="fa fa-eye"></i></a></li>
-                                        </ul>
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="productBox">
+                                    <div class="productImage clearfix">
+                                        <img src="img/products/products-04.jpg" alt="products-img">
+                                        <div class="productMasking">
+                                            <ul class="list-inline btn-group" role="group">
+                                                <li><a data-toggle="modal" href=".html" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a class="btn btn-default" data-toggle="modal" href="-2.html"><i class="fa fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="productCaption">
-                                    <a href="single-product.html">
-                                        <h5>ITSX Performance Tuner</h5>
-                                    </a>
-                                    <h3>$399</h3>
+                                    <div class="productCaption clearfix">
+                                        <a href="single-product.html">
+                                            <h5>ITSX Peformance Tuner</h5>
+                                        </a>
+                                        <h3>$399</h3>
+                                    </div>
                                 </div>
                             </div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="row latestArticles">
-                    <div class="col-xs-12">
-                        <div class="page-header">
-                            <h4>Latest Articles</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-12">
-                        <div class="thumbnail">
-                            <h5><a href="blog.html">SCT welcomes Vaughn Gittin Jr!</a></h5>
-                            <span class="meta">April 18, 2016 by <a href="#">Brittini</a></span>
-                            <a href="blog-single-right-sidebar.html"><img src="img/home/articles/articles-01.jpg" alt="article-image"></a>
-                            <div class="caption">
-                                <p>We are proud to announce our 2016 partnership with World Champion Drifter and Professional Fun-Haver, Vaughn Gittin Jr!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-12">
-                        <div class="thumbnail">
-                            <h5><a href="blog-single-right-sidebar.html">Pellentesque risus quis tellus</a></h5>
-                            <span class="meta">July 16, 2016 by <a href="#">Abdus</a></span>
-                            <a href="blog-single-right-sidebar.html"><img src="img/home/articles/articles-02.jpg" alt="article-image"></a>
-                            <div class="caption">
-                                <p>Praesent dui felis, gravida a auctor at, facilisis commodo ipsum. Cras eu faucibus justo. Nullam varius cursus nisi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-12">
-                        <div class="thumbnail">
-                            <h5><a href="blog-single-right-sidebar.html">Mauris lobortis augue ex</a></h5>
-                            <span class="meta">July 16, 2016 by <a href="#">Abdus</a></span>
-                            <a href="blog-single-right-sidebar.html"><img src="img/home/articles/articles-03.jpg" alt="article-image"></a>
-                            <div class="caption">
-                                <p>Etiam aliquam turpis quis blandit finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-12">
-                        <div class="thumbnail">
-                            <h5><a href="blog-single-right-sidebar.html">Suspendisse vestibulum dignissim</a></h5>
-                            <span class="meta">July 16, 2016 by <a href="#">Abdus</a></span>
-                            <a href="blog-single-right-sidebar.html"><img src="img/home/articles/articles-04.jpg" alt="article-image"></a>
-                            <div class="caption">
-                                <p>Suspendisse tristique interdum est, at hendrerit nunc laoreet et. Nulla vel arcu ac turpis pulvinar tincidunt eu eu nisi.</p>
-                            </div>
+
+
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -557,6 +520,7 @@
                 </div>
             </div>
         </div>
+
         <!-- COPY RIGHT -->
         <div class="copyRight clearfix">
             <div class="container">
@@ -590,7 +554,7 @@
                     <form action="#" method="POST" role="form">
                         <div class="form-group">
                             <label for="">Enter Email</label>
-                            <input type="email" class="form-control" id="">
+                            <input type="text" class="form-control" id="">
                         </div>
                         <div class="form-group">
                             <label for="">Password</label>
@@ -686,9 +650,9 @@
     <script src="plugins/owl-carousel/owl.carousel.js"></script>
     <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
     <script src="plugins/countdown/jquery.syotimer.js"></script>
+
     <script src="js/custom.js"></script>
 
 </body>
-
 
 </html>
